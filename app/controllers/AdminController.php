@@ -57,21 +57,13 @@ class AdminController extends BaseController {
     } 
 
     public function post_categoria(){    
-        $file = Input::file('portada');
- 
-        $destinationPath = 'uploads/portadas/';
-        $filename = str_random(16)."_".$file->getClientOriginalName();
-        $portada = Input::file('portada')->move($destinationPath, $filename);
-
         $inputs = Input::all();
 
         $categoria = new Categoria;
         $categoria->nombre = Input::get('nombre');
-        $categoria->color = Input::get('color');
-        $categoria->portada = $portada;
         $categoria->save();
 
-        return Redirect::to('/panel/categorias');             
+        return Redirect::to('/panel/gamas');             
     }
 
     public function get_nuevoproducto($id)

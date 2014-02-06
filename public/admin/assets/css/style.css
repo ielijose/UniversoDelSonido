@@ -3582,6 +3582,13 @@ div.DTTT_print_info p {
 	font-weight:600;
 }
 
+.tiles-title h4{
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 .tiles .tiles-body{
 	padding: 19px 18px 15px 24px;
 }
@@ -3808,6 +3815,9 @@ background-position: -95px -40px;
 }
 .tiles.blue{
 	background-color:#0090d9;
+}
+.tiles.orange{
+	background-color:#e67e22;
 }
 .tiles.green{
 	background-color:#0aa699;
@@ -7386,3 +7396,4 @@ ul.my-friends li .profile-pic{
 		margin: -55px 5px 0 0px;
 	}	
 }
+

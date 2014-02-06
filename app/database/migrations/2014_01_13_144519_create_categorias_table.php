@@ -14,9 +14,7 @@ class CreateCategoriasTable extends Migration {
 		Schema::create('categorias', function($table)
 	    {
 	        $table->increments('id');
-	        $table->string('portada');
 	        $table->string('nombre');
-	        $table->string('color');
 	        $table->timestamps();
 	    });
 	}

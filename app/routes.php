@@ -71,9 +71,9 @@ Route::get('/panel/perfil', ['uses' => 'AdminController@perfil', 'before' => 'au
 Route::post('/panel/perfil', ['uses' => 'AdminController@post_perfil', 'before' => 'auth']);
 Route::post('/panel/password', ['uses' => 'AdminController@post_password', 'before' => 'auth']);
 Route::get('/panel', ['uses' => 'AdminController@dashboard', 'before' => 'auth']);
-Route::get('/panel/categorias', ['uses' => 'AdminController@categorias', 'before' => 'auth']);
+Route::get('/panel/gamas', ['uses' => 'AdminController@categorias', 'before' => 'auth']);
 Route::post('/panel/categoria', ['uses' => 'AdminController@post_categoria', 'before' => 'auth']);
-Route::get('/panel/categoria/{id}', ['uses' => 'AdminController@get_categoria', 'before' => 'auth']);
+Route::get('/panel/gama/{id}', ['uses' => 'AdminController@get_categoria', 'before' => 'auth']);
 Route::get('/panel/categoria/{id}/nuevo', ['uses' => 'AdminController@get_nuevoproducto', 'before' => 'auth']);
 Route::post('/panel/categoria/nuevo', ['uses' => 'AdminController@post_nuevoproducto', 'before' => 'auth']);
 Route::post('/upload/file', ['uses' => 'UploadController@post_upload', 'before' => 'auth']);

@@ -102,7 +102,7 @@
 			<!-- BEGIN SIDEBAR MENU -->
 			<p class="menu-title"></p>
 			<ul>	
-				<li class=""> <a href="/panel/categorias"> <i class="icon-custom-form"></i> <span class="title">Categorías</span></a> </li>      
+				<li class=""> <a href="/panel/gamas"> <i class="icon-custom-form"></i> <span class="title">Gamas</span></a> </li>      
 				<li class=""> <a href="/panel/facturas"> <i class="icon-custom-extra"></i>  <span class="title">Facturas</span></a></li>      
 			</ul>
 			<!-- END SIDEBAR MENU --> 
