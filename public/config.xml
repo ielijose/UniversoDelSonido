@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "Joel Blackberry Zone"
+        version   = "1.0.0">
+		
+		<!-- If you do not want any permissions to be added to your app, add the
+		following tag to your config.xml; you will still have the INTERNET
+		permission on your app, which PhoneGap requires. -->
+			<preference name="permissions" value="none"/>
+			
+			<!-- plugin videoPlayer -->
+			<plugin name="VideoPlayer" value="com.phonegap.plugins.video.VideoPlayer"/>
+			
+			<gap:splash src="assets/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+			<gap:splash src="assets/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+			<gap:splash src="assets/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+			<gap:splash src="assets/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+			
+			<gap:splash src="assets/splash/ios/Default.png" width="320" height="480" />
+			<gap:splash src="assets/splash/ios/Default_at_2x.png" width="640" height="960" />
+			<gap:splash src="assets/splash/ios/Default_iphone5.png" width="640" height="1136" />
+			<gap:splash src="assets/splash/ios/Default-Landscape.png" width="1024" height="768" />
+			<gap:splash src="assets/splash/ios/Default-Portrait.png" width="768" height="1024" />
+			<gap:splash src="assets/splash/ios/Hi-Rez-Portrait.png" width="1536" height="2008" />
+			<gap:splash src="assets/splash/ios/Hi-Rez-Landscape.png" width="2048" height="1496" />
+
+			
+			<!-- to enable individual permissions use the following examples -->
+			<feature name="http://api.phonegap.com/1.0/battery"/>
+			<feature name="http://api.phonegap.com/1.0/camera"/>
+			<feature name="http://api.phonegap.com/1.0/contacts"/>
+			<feature name="http://api.phonegap.com/1.0/file"/>
+			<feature name="http://api.phonegap.com/1.0/geolocation"/>
+			<feature name="http://api.phonegap.com/1.0/media"/>
+			<feature name="http://api.phonegap.com/1.0/network"/>
+			<feature name="http://api.phonegap.com/1.0/notification"/>
+
+		
+		
+		<preference name="splash-screen-duration" value="1"/>
+		<preference name="fullscreen" value="true" />
+		<preference name="orientation" value="portrait" />
+		<icon src="assets/iconos/ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="assets/iconos/mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="assets/iconos/hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="assets/iconos/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+    <name>Joel BB Zone</name>
+
+    <description>
+        Todo 
+    </description>
+
+    <author href="http://puertolab.com" email="support@puertolab.com">
+        puertoLab
+    </author>
+</widget>
