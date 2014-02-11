@@ -25,6 +25,11 @@ class Producto extends Eloquent {
         return $this->hasMany('Comentario');
     }
 
+    public function gama()
+    {
+        return $this->belongsTo('Categoria', 'categoria_id', 'id');
+    }
+
     public static function boot()
     {
         parent::boot();

@@ -17,7 +17,7 @@ class AdminController extends BaseController {
         $usuario->username = Input::get('username');
         $usuario->save();
 
-        return Redirect::to('/panel/categorias');  
+        return Redirect::to('/panel/gamas');  
     }
 
     public function post_password()
@@ -37,7 +37,7 @@ class AdminController extends BaseController {
     
     public function dashboard()
     {   
-        return Redirect::to('/panel/categorias');  
+        return Redirect::to('/panel/gamas');  
     }   
 
     public function categorias()
@@ -52,7 +52,7 @@ class AdminController extends BaseController {
         if($categoria){
             return View::make('admin.categoria', array('categoria' => $categoria));  
         }else{
-            return Redirect::to('/panel/categorias');
+            return Redirect::to('/panel/gamas');
         }
     } 
 
@@ -72,7 +72,7 @@ class AdminController extends BaseController {
         if($categoria){
             return View::make('admin.productos.nuevo', array('categoria' => $categoria));
         }else{
-            return Redirect::to('/panel/categorias');
+            return Redirect::to('/panel/gamas');
         }          
     }
 
@@ -109,7 +109,7 @@ class AdminController extends BaseController {
             }
             Session::forget('imgs');
         }
-        return Redirect::to('/panel/categoria/' . $producto->categoria_id );
+        return Redirect::to('/panel/gama/' . $producto->categoria_id );
     }    
 
     public function borrar_categoria($id)
@@ -123,7 +123,7 @@ class AdminController extends BaseController {
         if($categoria){
             return View::make('admin.editar-categoria', array('categoria' => $categoria));  
         }else{
-            return Redirect::to('/panel/categorias');
+            return Redirect::to('/panel/gamas');
         }
     }
 
@@ -144,6 +144,6 @@ class AdminController extends BaseController {
         }
 
         $categoria->save();   
-        return Redirect::to('/panel/categorias');     
+        return Redirect::to('/panel/gamas');     
     }
 }

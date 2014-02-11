@@ -1,173 +1,205 @@
-@extends('layouts.master')
-@section('content')
-<div class="max-width bg1">	
-	<!-- Start row1 -->
-	<div class="row">
-		<div class="col-lg-6 wrapper-bg bg2">
-			<div id="slider" class="flexslider">
-				<ul class="slides">
-					<!--Start main image row1 -->
-					@if(count($producto->imagenes) > 0)
-					@foreach($producto->imagenes as $imagen)
-					<li>
-						<a href="{{ $imagen['imagen'] }}" data-pretty="prettyPhoto">
-							<img src="{{ $imagen['imagen'] }}" alt="" />
-						</a>
-					</li>
-					@endforeach
-					@endif
-				</ul>
-			</div>
-			<div id="carousel" class="flexslider">
-				<ul class="slides">
-					<!--Start thumb image row1 -->
-					@if(count($producto->imagenes) > 1)
-					@foreach($producto->imagenes as $imagen)
-					<li>
-						<a href="#">
-							<img src="{{ $imagen['imagen'] }}" alt="" />
-						</a>
-					</li>
-					@endforeach
-					@endif
-					
-					<!--End thumb image row2 -->
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-6 wrapper-bg bg1">
-			<!-- Start heading -->
-			<div class="row">
-				<div class="col-lg-12 bg2 heading pull-left">
-					<h4>{{ $producto->nombre }}</h4>
-					<span class="price price-lg">Bs. {{ $producto->precio }}</span>							
-				</div>		
-			</div>			
-			<!-- End heading -->				
-			<ul id="myTab" class="nav nav-tabs">
-				<?php $class = $class2 = 'active'; ?>
-				@if(strlen($producto->descripcion) > 0)
-					<li class="active"><a href="#description" data-toggle="tab">Descripción</a></li>
-					<?php $class = ''; ?>
-				@endif
-				@if(count($producto->detalles) > 0)
-					<li class="{{ $class }}"><a href="#details" data-toggle="tab">Detalles</a></li>
-					<?php $class = ''; ?>
-				@endif
-				<li class="{{ $class }}" ><a href="#comments" data-toggle="tab">Comentarios</a></li>
-				<li class="add-to-cart"><a href="#" data-id="{{ $producto->id }}">Añadir al carrito</a></li>
-			</ul>
-			<div id="myTabContent" class="tab-content">
-				@if(strlen($producto->descripcion) > 0)
-				<div class="tab-pane fade in active" id="description">
-					<h4 class="head">Descripción<span></span></h4>
-					<p>{{ $producto->descripcion }}</p>
-				</div>
-				<?php $class2 = ''; ?>
-				@endif
-				@if(count($producto->detalles) > 0)
-				<div class="tab-pane fade in {{ $class2 }}" id="details">
-					<h4 class="head">Detalles<span></span></h4>
-					<ul class="detail-list">
-						@foreach($producto->detalles as $detalle)
-							<li>{{ $detalle['detalle'] }} </li>
-						@endforeach
-					</ul>
-				</div>	
-				<?php $class2 = ''; ?>
-				@endif
-				<div class="tab-pane fade in {{ $class2 }}" id="comments">
-					<h4 class="head">Comentarios<span></span></h4>
-					@if(count($producto->comentarios) > 0)
-						@foreach($producto->comentarios as $comentario)
-							<div class="media">
-								<div class="media-body">
-									<h5 class="media-heading">
-										<a href="#"> {{ $comentario['nombre'] }} </a>
-									</h5>
-									<p> {{ $comentario['comentario'] }} </p>
-								</div>
-							</div>
-						@endforeach
-					@else
-						<h5>Aun no hay comentarios acerca de este artículo, se el primero en decir algo.</h5>
-					@endif
-					{{ Form::open(array('url' => '/comentar', 'method' => 'post', 'id' => 'comentar', 'class' => 'margintop20 validateform')) }}
-						<ul class="listForm">
-							<li>
-								{{ Form::label('nombre', 'Nombre:') }}
-								{{ Form::text('nombre', null, array('class' => 'form-control', 'placeholder' =>'Campo Obligatorio', 'data-rule' => "required", 'data-msg' => "Campo obligatorio." )) }}
-								<div class="validation"></div>
-							</li>
-							<li>
-								{{ Form::label('email', 'Email::') }}
-								{{ Form::text('email', null, array('class' => 'form-control', 'placeholder' =>'nombre@correo.com', 'data-rule' => 'email', 'data-msg' => 'Ingrese un correo electronico.' )) }}
-								<div class="validation"></div>
-							</li>
-							<li>
-								{{ Form::label('telefono', 'Telefono:') }}
-								{{ Form::text('telefono', null, array('class' => 'form-control', 'placeholder' =>'0424-1234567', 'data-rule' => "required", 'data-msg' => "Campo obligatorio." )) }}
-								<div class="validation"></div>
-							</li>
-							<li>
-								{{ Form::label('comentario', 'Comentario:') }}
-								{{ Form::textarea('comentario', null, array('class' => 'form-control', 'placeholder' =>'Campo Obligatorio', 'data-rule' => "required", 'data-msg' => "Campo obligatorio." )) }}
-								<div class="validation"></div>
-							</li>
-							<li>
-								<button type="submit" class="btn btn-lg btn-primary">Enviar Comentario</button>
-							</li>
-						</ul>
-						{{ Form::hidden('id', $producto->id)}}
-					{{ Form::close() }}
-				</div>	
-			</div>
-		</div>			
-	</div>			
-	<!-- End row1 -->
-	<!-- Start heading -->
-	<div class="row">
-		<div class="col-lg-12 bg6 pull-left">
-			<div class="heading">
-				<h4>Productos Relacionados</h4>
-			</div>									
-		</div>		
-	</div>			
-	<!-- End heading -->
-	@if(count($relacionados)>0)
-	<!-- Start row2 -->
-	<div class="row">
-		@foreach($relacionados as $relacionado)
-		<div class="col-lg-3 wrapper-bg bg1 aligncenter" style="border:solid 3px #FFFFFF;">
-			<a href="/producto/{{ $relacionado->id }}" class="buy"><span>Ver</span></a>
-			<span class="caption-bg"></span>
-			<span class="frame-hover"></span>
-			<img src="{{ $relacionado->imagen['imagen'] }}" class="img-responsive" alt="">
-			<div class="product-title">
-				<h5><a href="/producto">{{ $relacionado->nombre }}</a></h5>
-				<span class="price">Bs. {{ $relacionado->precio }}</span>
-			</div>
-		</div>
-		@endforeach			
-			
-	</div>			
-	<!-- End row2 -->	
-	@endif
-</div>
+@extends('layouts.public')
+
+@section('slider')
+<section id="noslider" class="sixteen columns headerContent" data-layout="blur">
+
+	<div id="blurMask">
+		<canvas id="blurCanvas"></canvas>
+	</div>
+
+	<div class="headerContentContainer">
+		<div class="pageTitle">{{ $producto->nombre }}</div> 
+	</div>           
+</section>
 @stop
-@section('javascript')
-	<script>
-		$(document).on('ready', function(){
-			$(".add-to-cart a").on("click", function(event){
-				event.preventDefault();
-				var id = $(this).data('id');
-				$.post('/cart/' + id + '/add', function(data, textStatus, xhr) {
-					$.post('/total', function(data, textStatus, xhr) {
-						$(".cart").html("Tu compra es de: <span> " + data + " Bs.</span>");
-						$(".hide").removeClass('hide');
-					});
-				});
-			})
-		});
-	</script>
+
+@section('content')
+
+
+
+<div class="contentBgFull"></div>
+
+<!-- Tag Line ================================================== -->
+
+<div id="tagLineShadow" class="sixteen columns"></div>
+
+<!-- Portfolio items ================================================== -->
+
+
+<section class="portfolioSingle twelve columns clearfix">
+
+
+
+	<section class="portfolioContent row">
+
+		<div class="portfolioDesc eight columns">
+			<h2>Caracter&iacute;sticas</h2>
+			<p>{{ $producto->descripcion }}</p>
+		</div>
+
+		<div class="portfolioDetails four columns">
+			<h4>Precio:</h4>
+			<h4><a href="#" class="highlight" style="font-size:22px"> {{ $producto->precio }} Bs.</a></h4>
+
+			<h4>Gama:</h4>
+			<h4><a href="#" class="highlight" style="font-size:18px"> {{ $producto->gama['nombre'] }}</a></h4>
+		</div>
+	</section>
+
+
+	<!-- separator ================================================== -->
+
+	<div class="lineSeparator  twelve columns row"></div>
+
+	@if(count($relacionados)>0)
+	<!-- Featured works ================================================== -->
+	<section class="twelve columns remove-left">
+		<div class="sectionHeader row clearfix">
+			<div class="sectionHeadingWrap">
+				<span class="sectionHeading">SIMILARES</span>
+			</div>		
+		</div>
+
+		<div class="carouselWrapper small">
+			<ul class="carousel portfolio" data-autoPlay="false">
+				<!-- Start carousel item portfolio -->
+				@foreach($relacionados as $relacionado)
+
+				<li>
+					<figure>
+						<a class="jackbox">
+							<img width="161" height="122" src="{{ $relacionado->imagen['imagen'] }}" alt="" />
+							<span class="portfolioImageOver transparent"></span>
+						</a>
+					</figure>
+
+					<article data-targetURL="portfolio-single.html">
+						<p>{{ $relacionado->nombre }}</p>
+						<span>- {{ $relacionado->gama['nombre'] }} -</span>
+					</article>
+
+					<!-- Sample div used as an item's description, will only appear inside JackBox -->
+					<div class="jackbox-description" id="description_1">
+						<h3>Description Title One</h3>
+					</div>
+
+					<span class="carouselArrow"></span>
+				</li>
+				@endforeach
+				<!-- /End carousel item portfolio -->
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+
+
+	</section><!-- End // Featured works -->
+	@endif
+
+	<section class="comments" id="">
+
+		<div class="sectionHeader row clearfix">
+			<div class="sectionHeadingWrap">
+				<span class="sectionHeading">COMENTARIOS</span>
+			</div>
+		</div>
+		<br><br><br>
+
+		<section class="row" data-toggle="true">
+
+
+			@if(count($producto->comentarios) > 0)
+				@foreach($producto->comentarios as $comentario)
+
+					<article class="row">
+						<div class="question">
+							<strong>{{ $comentario['nombre'] }} </strong>
+						</div>
+						<p>{{ $comentario['comentario'] }}</p>
+						<div class="separator"></div>
+					</article>					
+				@endforeach
+			@else
+				<h2>Aun no hay comentarios acerca de este artículo.<br>Se el <a href="javascript:void(0)" class="be-the-first">primero</a> en decir algo.</h2>
+			@endif
+			
+
+
+			
+
+			
+		</section>
+	</section>
+
+
+
+</section><!-- End // portfolio single content -->
+
+<aside class="sidebar four columns">
+
+	<!-- widget ================================================== -->
+
+	<div class="onefourth">
+
+		<div class="textWidget clearfix">
+			<img src="{{ $producto->imagen['imagen'] }}" width="225" height="170">
+		</div>
+
+	</div>
+
+	<!-- widget ================================================== -->
+
+	@if(count($producto->imagenes) > 0)
+
+	<div class="onefourth">
+		<div class="textWidget clearfix">
+			<ul>
+				@foreach($producto->imagenes as $imagen)
+				<li class="imgP">
+					<a href="#">
+						<img width="71" height="71" src="{{ $imagen['imagen'] }}" alt="" />
+					</a>
+					<div class="borderHover"></div>
+				</li>
+				@endforeach
+
+			</ul>
+		</div>
+	</div>
+	@endif
+
+	{{ Form::open(array('url' => '/comentar', 'method' => 'post', 'id' => 'comentar', 'class' => 'margintop20 validateform')) }}
+		{{ Form::label('nombre', 'Nombre:') }}
+		{{ Form::text('nombre', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
+
+		{{ Form::label('email', 'Email::') }}
+		{{ Form::text('email', null, array('placeholder' =>'nombre@correo.com', 'required' => 'required' )) }}
+
+		{{ Form::label('comentario', 'Comentario:') }}
+		{{ Form::textarea('comentario', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
+
+		<button type="submit" class="button normal light pushdown">Enviar Comentario</button>					
+	{{ Form::hidden('id', $producto->id)}}
+	{{ Form::close() }}	
+
+</aside>
+
+<div class="clearfix"></div>
+
+@stop
+
+@section('js')
+
+<!-- Style switcher ================================================== -->
+<link rel="stylesheet" href="/assets/js/switcher.css">
+<script src="/assets/js/switcher.js"></script>
+
+<script type="text/javascript">
+	$(document).on('ready', function(){
+		jQuery.noConflict();
+		jQuery(".be-the-first").on("click", function(){
+			jQuery("#nombre" ).focus();
+		})
+	});
+</script>
+
 @stop

@@ -2,7 +2,9 @@
 
 Route::get('/', function(){
 	$categorias = DB::table('categorias')->get();
-	return View::make('index', array('categorias' => $categorias));
+    $productos = Producto::orderBy('id', 'DESC')->paginate(8);
+
+    return View::make('index', array('productos' => $productos, 'categorias' => $categorias));
 });
 
 Route::get('/categoria/{id}', function($id)
@@ -39,7 +41,7 @@ Route::post('/comentar', function(){
     $comentario =  new Comentario();
     $comentario->nombre = Input::get('nombre');
     $comentario->email = Input::get('email');
-    $comentario->telefono = Input::get('telefono');
+    $comentario->telefono = "unavaliable";
     $comentario->comentario = Input::get('comentario');
     $comentario->producto_id = $id = Input::get('id');
     $comentario->save();
@@ -59,6 +61,11 @@ View::composer('layouts.master', function($view)
     $categorias = Categoria::all();
     $view->with('categorias', $categorias);
 });
+View::composer('layouts.public', function($view)
+{
+    $categorias = Categoria::all();
+    $view->with('categorias', $categorias);
+});
 
 /* ADMIN */
 Route::get('/login', ['before' => 'guest', function(){
@@ -73,7 +80,7 @@ Route::post('/panel/password', ['uses' => 'AdminController@post_password', 'befo
 Route::get('/panel', ['uses' => 'AdminController@dashboard', 'before' => 'auth']);
 Route::get('/panel/gamas', ['uses' => 'AdminController@categorias', 'before' => 'auth']);
 Route::post('/panel/categoria', ['uses' => 'AdminController@post_categoria', 'before' => 'auth']);
-Route::get('/panel/gama/{id}', ['uses' => 'AdminController@get_categoria', 'before' => 'auth']);
+Route::get('/panel/categoria/{id}', ['uses' => 'AdminController@get_categoria', 'before' => 'auth']);
 Route::get('/panel/categoria/{id}/nuevo', ['uses' => 'AdminController@get_nuevoproducto', 'before' => 'auth']);
 Route::post('/panel/categoria/nuevo', ['uses' => 'AdminController@post_nuevoproducto', 'before' => 'auth']);
 Route::post('/upload/file', ['uses' => 'UploadController@post_upload', 'before' => 'auth']);

@@ -6414,3 +6414,21 @@ html[xmlns] .slides {
 	max-width:71px;
 	alignment-baseline:middle;
 }
+
+.jackbox img{
+  vertical-align: middle !important;
+  max-height: 225px;
+  max-width: 225px;
+ }
+
+.jackbox .img{
+  height:225px;
+  min-height: 225px;
+  max-height: 225px;
+  line-height: 225px;
+}
+
+
+.margintop20{
+  margin-top: 520px !important;
+}

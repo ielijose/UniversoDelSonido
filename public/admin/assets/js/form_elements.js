@@ -1,23 +1,3 @@
-//Cool ios7 switch - Beta version
-//Done using pure Javascript
-var Switch = require('ios7-switch')
-        , checkbox = document.querySelector('.ios')
-        , mySwitch = new Switch(checkbox);
- mySwitch.toggle();
-      mySwitch.el.addEventListener('click', function(e){
-        e.preventDefault();
-        mySwitch.toggle();
-      }, false);
-//creating multiple instances
-var Switch2 = require('ios7-switch')
-        , checkbox = document.querySelector('.iosblue')
-        , mySwitch2 = new Switch2(checkbox);
-
-      mySwitch2.el.addEventListener('click', function(e){
-        e.preventDefault();
-        mySwitch2.toggle();
-      }, false);
-	  
 $(document).ready(function(){
 	  //Dropdown menu - select2 plug-in
 	  $("#source").select2();
@@ -66,12 +46,8 @@ $(document).ready(function(){
 	$('#text-editor').wysihtml5();
 	
 	//Drag n Drop up-loader
-	$("div#myId").dropzone({ url: "/file/post" });
+	$("div#dz").dropzone({ url: "/upload/file", parallelUploads : 1 });
 	
 	//Single instance of tag inputs  -  can be initiated with simply using data-role="tagsinput" attribute in any input field
-	$('#source-tags').tagsinput({
-		typeahead: {
-			source: ['Amsterdam', 'Washington', 'Sydney', 'Beijing', 'Cairo']
-		}	
-	});
+	$('#source-tags').tagsinput();
 });

@@ -14,12 +14,17 @@
 
 			<div class="onefourth logoFooter">
 				<a href="index.html"><div class="footerLogo"></div></a>
-				<form action="login.php" method="post" class="nlform login" >
-					<input class="nlfield" type="input"  name="user" id="user" placeholder="Usuario"  />
-					<input class="nlfield" type="password"  name="pass" id="pass" placeholder="Contraseña" />
-					<input type="submit" class="nlbutton" name="submit" id="submit" value=" "/>
-					<input type="hidden" name="action" value="login"/>
-				</form>
+
+				 @if (Auth::user())
+					<a href="/panel/">Panel</a>
+				 @else
+					<form action="/login" method="post" class="nlform" >
+						<input class="nlfield" type="input"  name="username" id="user" placeholder="Usuario"  />
+						<input class="nlfield" type="password"  name="password" id="pass" placeholder="Contraseña" />
+						<input type="submit" class="nlbutton" name="submit" id="submit" value=" "/>
+						<input type="hidden" name="action" value="login"/>
+					</form>
+				@endif
 			</div>
 
 			<div class="onefourth contactDetails">

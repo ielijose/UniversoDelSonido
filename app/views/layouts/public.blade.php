@@ -39,55 +39,7 @@
 		
 		@include('header')
 
-
-
-		<!-- Header content ================================================== -->
-		<!-- For data-layout, you can choose between a color background like that "#aaa", "blur" or "image" -->
-		<section id="slider" class="sixteen columns headerContent">
-
-
-			<div class="bannercontainer">					
-				<section id="slider" class="sixteen columns headerContent">
-
-
-					<div class="bannercontainer">					
-						<div class="banner">
-							<ul>
-
-								<!-- SLIDE -->
-								<li data-transition="boxfade" data-slotamount="5"  data-thumb="images/other_images/img53.jpg"> 		
-									<img src="/assets/images/opaque_slides/1.jpg" alt="">	
-
-									<div class="caption lfl" data-x="30" data-y="248" data-speed="900" data-start="100" data-easing="easeOutExpo"><h1>?????????????</h1></div>	
-									<div class="caption lfl" data-x="30" data-y="290" data-speed="900" data-start="400" data-easing="easeOutExpo"><p class="whitebg">????????? ??????? ??????? ??????? ????????.<br />?????????? ?????????? ? ? ? ? ????????????????????? ???????? ?? ????????? ????? ?????? ?????? ?????? ????? ??????.</p></div>	
-								</li>
-
-								<!-- SLIDE -->
-								<li data-transition="boxfade" data-slotamount="5"  data-thumb="images/other_images/img53.jpg"> 		
-									<img src="/assets/images/opaque_slides/2.jpg" alt="">	
-
-									<div class="caption lfl" data-x="30" data-y="248" data-speed="900" data-start="100" data-easing="easeOutExpo"><h1>?????????????</h1></div>	
-									<div class="caption lfl" data-x="30" data-y="290" data-speed="900" data-start="400" data-easing="easeOutExpo"><p class="whitebg">????????? ??????? ??????? ??????? ????????.<br />?????????? ?????????? ? ? ? ? ????????????????????? ???????? ?? ????????? ????? ?????? ?????? ?????? ????? ??????.</p></div>	
-								</li>
-
-								<!-- SLIDE -->
-								<li data-transition="boxfade" data-slotamount="5"  data-thumb="images/other_images/img53.jpg"> 		
-									<img src="/assets/images/opaque_slides/3.jpg" alt="">	
-
-									<div class="caption lfl" data-x="30" data-y="248" data-speed="900" data-start="100" data-easing="easeOutExpo"><h1>????????????????</h1></div>	
-									<div class="caption lfl" data-x="30" data-y="290" data-speed="900" data-start="400" data-easing="easeOutExpo"><p class="whitebg">?????????? ?????? ????? ??????? ???????? ??????? ?????????????.<br />????????? ?????? ?????? ??????? ??????? ?? ?????????.</p></div>	
-								</li>
-
-
-							</ul>	
-							<div class="tp-bannertimer"></div>												
-						</div>					
-					</div>
-
-				</section>					
-			</div>
-
-		</section>
+		@yield('slider')	
 
 		<section class="mainContent">
 
@@ -108,27 +60,31 @@
 	================================================== -->
 
 	<!-- JS ================================================== -->
+    
 	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/assets/js/tiny.accordion.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jacked.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.easing.1.3.min.js"></script>
-	<script type="text/javascript" src="/assets/js/slackBlur.min.js"></script>
-	<script type="text/javascript" src="/assets/js/ddsmoothmenu.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.tweet.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="/assets/jackbox/js/libs/jquery.address-1.5.min.js"></script>
-	<script type="text/javascript" src="/assets/jackbox/js/jackbox-swipe.min.js"></script>
-	<script type="text/javascript" src="assets/jackbox/js/jackbox.min.js"></script>
-	<script type="text/javascript" src="/assets/jackbox/js/libs/StackBlur.min.js"></script>
-	<script type="text/javascript" src="/assets/js/tipsy/jquery.tipsy.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.flexslider.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.fitvids.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/assets/js/tiny.accordion.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jacked.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/slackBlur.min.js"></script>
+    <script type="text/javascript" src="/assets/js/ddsmoothmenu.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.tweet.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/assets/jackbox/js/libs/jquery.address-1.5.min.js"></script>
+    <script type="text/javascript" src="/assets/jackbox/js/jackbox-swipe.min.js"></script>
+    <script type="text/javascript" src="/assets/jackbox/js/jackbox.min.js"></script>
+    <script type="text/javascript" src="/assets/jackbox/js/libs/StackBlur.min.js"></script>
+    <script type="text/javascript" src="/assets/js/tipsy/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.min.js"></script>
 	<script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-	<script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="/assets/js/wiseguys.min.js"></script>
-	<!-- Favicons ================================================== -->
+    <script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="/assets/js/wiseguys.min.js"></script>
+
+
+
+	
 
 	@yield('js')
 
