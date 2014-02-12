@@ -50,7 +50,7 @@
 					<li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
 				</ul>
 				<!-- BEGIN LOGO -->	
-				<a href="/"><img src="/admin/assets/img/logo.png" class="logo"  data-src="/admin/assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="106" height="21"/></a>
+				<a href="/"><img src="/admin/assets/img/logo.png" class="logo"  data-src="/admin/assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="127" height="36" style="margin-top:12px;"/></a>
 				<!-- END LOGO --> 
 			</div>
 			<!-- END RESPONSIVE MENU TOGGLER --> 
@@ -102,8 +102,8 @@
 			<!-- BEGIN SIDEBAR MENU -->
 			<p class="menu-title"></p>
 			<ul>	
-				<li class=""> <a href="/panel/gamas"> <i class="icon-custom-form"></i> <span class="title">Gamas</span></a> </li>      
-				<li class=""> <a href="/panel/facturas"> <i class="icon-custom-extra"></i>  <span class="title">Facturas</span></a></li>      
+				<li class=""> <a href="/panel/gamas"> <i class="icon-custom-form" style="color:#FFF;"></i> <span class="title">Gamas</span></a> </li>      
+				<li class=""> <a href="/panel/facturas"> <i class="icon-custom-extra" style="color:#FFF;"></i>  <span class="title">Facturas</span></a></li>      
 			</ul>
 			<!-- END SIDEBAR MENU --> 
 		</div>

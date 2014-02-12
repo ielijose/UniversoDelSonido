@@ -103,13 +103,14 @@
 			</div>
 		</div>
 		<br><br><br>
+        
 
 		<section class="row" data-toggle="true">
 
 
 			@if(count($producto->comentarios) > 0)
 				@foreach($producto->comentarios as $comentario)
-
+<div class="divider large"></div>
 					<article class="row">
 						<div class="question">
 							<strong>{{ $comentario['nombre'] }} </strong>
@@ -121,13 +122,8 @@
 			@else
 				<h2>Aun no hay comentarios acerca de este artículo.<br>Se el <a href="javascript:void(0)" class="be-the-first">primero</a> en decir algo.</h2>
 			@endif
-			
-
-
-			
-
-			
 		</section>
+
 	</section>
 
 

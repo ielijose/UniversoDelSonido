@@ -63,7 +63,7 @@ and (min-width : 1824px) {
   	/*** Page content ***/
   	.page-content { 
   		margin-left: 250px; 
-		min-height: 1006px;
+		min-height: 900px;
 	}
 
 	.page-content.no-min-height {
@@ -302,7 +302,7 @@ and (orientation : portrait) {
 	.page-sidebar {
 	    position: fixed;
 		width: 260px;
-		background-color:#1b1e24 !important
+		background-color:#f60 !important
 	}
 
 	.page-sidebar .user-info{
@@ -351,7 +351,7 @@ and (orientation : portrait) {
 	
 	.page-sidebar > ul > li >a:hover, 
 	.page-sidebar > ul > li:hover >a {  
-		background: #1b1e24;
+		background: #f60;
 	}
 	.page-sidebar > ul > li.open > a, .page-sidebar > ul > li > a:hover, .page-sidebar > ul > li:hover > a{
 		  padding: 11.5px 31px 11.5px 31px;

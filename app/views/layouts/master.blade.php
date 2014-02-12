@@ -36,7 +36,7 @@
 	<header>
 		<div class="navbar">
 			<div class="max-width">
-				<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="" /></a>
+				<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="El Universo del Sonido"/></a>
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
 						<li class="dropdown active">
