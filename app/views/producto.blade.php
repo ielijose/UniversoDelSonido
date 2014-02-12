@@ -43,6 +43,9 @@
 
 			<h4>Gama:</h4>
 			<h4><a href="#" class="highlight" style="font-size:18px"> {{ $producto->gama['nombre'] }}</a></h4>
+            <ul class="customButtons">
+               <li class="button ecommerce pushdown"><a href="#">COMPRAR</a></li>
+             </ul>
 		</div>
 	</section>
 

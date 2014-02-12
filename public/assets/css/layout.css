@@ -748,7 +748,7 @@ opacity: 0.8;
 }
 
 .portfolioDetails a:hover {
-    color: #fff;
+    color: #C00;
 }
 
 .portfolioDetails h4, .portfolioDetails ul {
@@ -5114,7 +5114,6 @@ list-style-type: none;
  display: inline-block;	
 }
 .customButtons .button {
- font: 14px/27px 'CabinMediumItalic', sans-serif;
  font-style: normal;
  padding-right: 27px;
 }
