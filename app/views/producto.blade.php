@@ -95,7 +95,7 @@
 	</section><!-- End // Featured works -->
 	@endif
 
-	<section class="comments" id="">
+	<section class="comments sixteen columns" id="">
 
 		<div class="sectionHeader row clearfix">
 			<div class="sectionHeadingWrap">
@@ -105,7 +105,7 @@
 		<br><br><br>
         
 
-		<section class="row" data-toggle="true">
+		<section class="row twelve columns remove-left" data-toggle="true">
 
 
 			@if(count($producto->comentarios) > 0)
