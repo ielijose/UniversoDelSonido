@@ -100,7 +100,7 @@ Route::post('/panel/imagen/borrar/{id}', ['uses' => 'ImagenController@borrar_ima
 /* CART */
 Route::get('/cart', ['uses' => 'CartController@get_cart'] );
 Route::get('/cart/remove/{rowid}', ['uses' => 'CartController@get_removeitem'] );
-Route::post('/cart/{id}/add', ['uses' => 'CartController@post_add'] );
+Route::get('/cart/{id}/add', ['uses' => 'CartController@get_add'] );
 Route::get('/cart/minus/{rowid}', ['uses' => 'CartController@post_minus'] );
 Route::get('/cart/plus/{rowid}', ['uses' => 'CartController@post_plus'] );
 

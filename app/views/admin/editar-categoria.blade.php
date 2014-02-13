@@ -18,11 +18,8 @@
 					<input type="text" name="nombre" value="{{ $categoria->nombre }}" class="form-control" required="required" placeholder="Nombre de la Categoría">
 				</div>
 				<br/>
-				<img src="/{{ $categoria->portada }}" class="img-responsive">
-				<input name="portada" type="file" />
 				<br/>
-				<input type="color" name="color" value="{{ $categoria->color }}" required="required">
-				
+			
 				<input type="submit" class="btn btn-primary pull-right" value="Guardar"/>  
 				<div class="clearfix"></div>
 			</div>

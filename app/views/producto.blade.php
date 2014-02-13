@@ -43,9 +43,9 @@
 
 			<h4>Gama:</h4>
 			<h4><a href="#" class="highlight" style="font-size:18px"> {{ $producto->gama['nombre'] }}</a></h4>
-            <ul class="customButtons">
-               <li class="button ecommerce pushdown"><a href="#" data-id="{{ $producto->id }}">COMPRAR</a></li>
-             </ul>
+			<ul class="customButtons">
+				<li class="button ecommerce pushdown add-to-cart"><a href="/cart/{{ $producto->id }}/add">COMPRAR</a></li>
+			</ul>
 		</div>
 	</section>
 
@@ -98,36 +98,7 @@
 	</section><!-- End // Featured works -->
 	@endif
 
-	<section class="comments sixteen columns" id="">
 
-		<div class="sectionHeader row clearfix">
-			<div class="sectionHeadingWrap">
-				<span class="sectionHeading">COMENTARIOS</span>
-			</div>
-		</div>
-		<br><br><br>
-        
-
-		<section class="row twelve columns remove-left" data-toggle="true">
-
-
-			@if(count($producto->comentarios) > 0)
-				@foreach($producto->comentarios as $comentario)
-<div class="divider large"></div>
-					<article class="row">
-						<div class="question">
-							<strong>{{ $comentario['nombre'] }} </strong>
-						</div>
-						<p>{{ $comentario['comentario'] }}</p>
-						<div class="separator"></div>
-					</article>					
-				@endforeach
-			@else
-				<h2>Aun no hay comentarios acerca de este artículo.<br>Se el <a href="javascript:void(0)" class="be-the-first">primero</a> en decir algo.</h2>
-			@endif
-		</section>
-
-	</section>
 
 
 
@@ -164,23 +135,69 @@
 			</ul>
 		</div>
 	</div>
-	@endif
-
-	{{ Form::open(array('url' => '/comentar', 'method' => 'post', 'id' => 'comentar', 'class' => 'margintop20 validateform')) }}
-		{{ Form::label('nombre', 'Nombre:') }}
-		{{ Form::text('nombre', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
-
-		{{ Form::label('email', 'Email::') }}
-		{{ Form::text('email', null, array('placeholder' =>'nombre@correo.com', 'required' => 'required' )) }}
-
-		{{ Form::label('comentario', 'Comentario:') }}
-		{{ Form::textarea('comentario', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
-
-		<button type="submit" class="button normal light pushdown">Enviar Comentario</button>					
-	{{ Form::hidden('id', $producto->id)}}
-	{{ Form::close() }}	
+	@endif	
 
 </aside>
+
+
+<section class="comments sixteen columns" id="">
+
+		<div class="sectionHeader row clearfix">
+			<div class="sectionHeadingWrap">
+				<span class="sectionHeading">COMENTARIOS</span>
+			</div>
+		</div>
+
+		<div class="ten columns alpha">
+
+			@if(count($producto->comentarios) > 0)
+			@foreach($producto->comentarios as $comentario)
+			
+			<article class="row">
+				<div class="question">
+					<?php
+						$date = new DateTime($comentario->created_at);
+					?>
+					<strong>{{ $comentario['nombre'] }} </strong>
+					<span class="date-comment">{{ $date->format('d/m/y h:i A') }}</span>
+				</div>
+				<p>{{ $comentario['comentario'] }}</p>
+				<div class="separator"></div>
+			</article>		
+			<div class="divider large"></div>			
+			@endforeach
+			@else
+			<h2>Aun no hay comentarios acerca de este artículo.<br>Se el <a href="javascript:void(0)" class="be-the-first">primero</a> en decir algo.</h2>
+			@endif
+
+		</div>
+
+		<div class="six columns omega">
+
+			{{ Form::open(array('url' => '/comentar', 'method' => 'post', 'id' => 'comentar', 'class' => 'validateform')) }}
+			{{ Form::label('nombre', 'Nombre:') }}
+			{{ Form::text('nombre', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
+
+			{{ Form::label('email', 'Email::') }}
+			{{ Form::text('email', null, array('placeholder' =>'nombre@correo.com', 'required' => 'required' )) }}
+
+			{{ Form::label('comentario', 'Comentario:') }}
+			{{ Form::textarea('comentario', null, array('placeholder' =>'Campo Obligatorio', 'required' => "required")) }}
+
+			<button type="submit" class="button normal light pushdown">Enviar Comentario</button>					
+			{{ Form::hidden('id', $producto->id)}}
+			{{ Form::close() }}	
+
+		</div>
+		
+
+		<section class="row twelve columns remove-left" data-toggle="true">
+			
+		</section>
+
+		
+
+	</section>
 
 <div class="clearfix"></div>
 
@@ -193,12 +210,13 @@
 <script src="/assets/js/switcher.js"></script>
 
 <script type="text/javascript">
-	$(document).on('ready', function(){
-		jQuery.noConflict();
-		jQuery(".be-the-first").on("click", function(){
-			jQuery("#nombre" ).focus();
-		})
-	});
+$(document).on('ready', function(){
+	jQuery.noConflict();
+	jQuery(".be-the-first").on("click", function(){
+		jQuery("#nombre" ).focus();
+	})
+	
+});
 </script>
 
 @stop

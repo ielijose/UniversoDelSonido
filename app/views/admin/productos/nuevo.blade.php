@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
 <div class="page-title">	
-	<h3>Nuevo Producto - Categoría [ <span class="semi-bold">{{ $categoria['nombre'] }}</span> ]</h3>		
+	<h3>Nuevo Producto - [ <span class="semi-bold">{{ $categoria['nombre'] }}</span> ]</h3>		
 </div>
 <div class="row">
 	{{ Form::open(array('url' => '/panel/categoria/nuevo', 'enctype' => 'multipart/form-data', 'class' => 'form-no-horizontal-spacing', 'id' => 'form-condensed')) }}

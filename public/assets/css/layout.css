@@ -6431,3 +6431,7 @@ html[xmlns] .slides {
 .margintop20{
   margin-top: 520px !important;
 }
+
+.date-comment{
+  float: right;
+}

@@ -7,11 +7,11 @@ class CartController extends BaseController {
         echo Cart::content();        
     }  
 
-    public function post_add($id)
+    public function get_add($id)
     {
         $producto = Producto::find($id);
-
         Cart::add($id, $producto->nombre , 1, $producto->precio, array('image' => $producto->imagen['imagen'] ));
+        return Redirect::to('/producto/' . $id);
     } 
 
     public function get_removeitem($rowid)

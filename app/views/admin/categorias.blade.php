@@ -35,7 +35,7 @@
 						<a href="javascript:;" class="remove" data-id="{{ $categoria['id'] }}"></a>		
 					</div>	
 					<div class="tiles-title">
-						<a href="/panel/gama/{{ $categoria['id'] }}">
+						<a href="/panel/categoria/{{ $categoria['id'] }}">
 							<h4>{{ $categoria['nombre'] }}</h4>
 						</a>
 					</div>	

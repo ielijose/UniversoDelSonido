@@ -109,7 +109,7 @@ class AdminController extends BaseController {
             }
             Session::forget('imgs');
         }
-        return Redirect::to('/panel/gama/' . $producto->categoria_id );
+        return Redirect::to('/panel/categoria/' . $producto->categoria_id );
     }    
 
     public function borrar_categoria($id)
@@ -133,16 +133,7 @@ class AdminController extends BaseController {
 
         $categoria = Categoria::find($id);
         $categoria->nombre = Input::get('nombre');
-        $categoria->color = Input::get('color');
-
-        $file = Input::file('portada'); 
-        if($file){
-            $destinationPath = 'uploads/portadas/';
-            $filename = $file->getClientOriginalName();
-            $portada = Input::file('portada')->move($destinationPath, $filename);
-            $categoria->portada = $portada;
-        }
-
+       
         $categoria->save();   
         return Redirect::to('/panel/gamas');     
     }
