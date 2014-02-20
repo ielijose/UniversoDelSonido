@@ -118,6 +118,16 @@
              </ul>
              
            </article>
+
+           <article class="onethird last">
+           
+            <header class="highlighted"><h4>TOTAL</h4></header>
+              
+               <ul class="features">
+                <li> {{ Cart::total() }} </li>
+             </ul>
+             
+           </article>
            
         </section>
         @else
