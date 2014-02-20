@@ -76,7 +76,7 @@
 			<li><a href="contacto.html">CONT&Aacute;CTO</a></li>
 		</ul>
 
-		<span class="copyright">Derechos reservados &copy; El Universo del Sonido 2013</span>
+		<span class="copyright">Derechos reservados &copy; El Universo del Sonido {{ date('Y') }}</span>
 
 
 	</section>
