@@ -5738,7 +5738,7 @@ transition: all 0.2s ease-in-out;
 .comparison .onesixth:first-child{ width:200px;}
 
 .comparison .oneseventh{ position: relative; float: left; width: 124px; }
-.comparison .oneseventh:first-child{ position: relative; float: left; width:204px;}
+.comparison .oneseventh:first-child{ position: relative; float: left; width:320px;}
 
 
 .comparison .onesixth, .comparison .oneseventh, .comparison .onefifth, .comparison .onefourth, .comparison .onethird{ margin-right: 2px;}
@@ -6449,7 +6449,7 @@ html[xmlns] .slides {
 
 /* ****/
 .cart-change{
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   text-decoration: none !important;
 }
@@ -6466,8 +6466,8 @@ html[xmlns] .slides {
 }
 
 span.cart-qty{
-  font-size: 18px;
+  font-size: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 1px 10px;
+  padding: 0px 5px;
 }

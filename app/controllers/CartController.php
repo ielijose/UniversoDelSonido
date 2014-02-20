@@ -80,8 +80,8 @@ class CartController extends BaseController {
 
         Mail::send('emails.factura', $data , function($m) use ($inputs)
         {
-            $m->from('ventas@joelblackberryzone.com.ve', 'JoelBlackBerryZone.com.ve');
-            $m->to($inputs['correo'])->cc('ventas@joelblackberryzone.com.ve')->subject('Orden de compra.');
+            $m->from('ventas@eluniversodelsonido.com', 'ElUniversoDelSonido.com');
+            $m->to($inputs['correo'])->cc('ventas@eluniversodelsonido.com')->subject('Orden de compra.');
         });
         return Redirect::to('/procesado');
     } 
@@ -117,8 +117,8 @@ class CartController extends BaseController {
 
         Mail::send('emails.pago', $data , function($m) use ($factura)
         {
-            $m->from('ventas@joelblackberryzone.com.ve', 'JoelBlackBerryZone.com.ve');
-            $m->to($factura['correo'])->cc('ventas@joelblackberryzone.com.ve')->subject('Confirmación de Pago.');
+            $m->from('ventas@eluniversodelsonido.com', 'ElUniversoDelSonido.com');
+            $m->to($factura['correo'])->cc('ventas@eluniversodelsonido.com')->subject('Confirmación de Pago.');
         });
 
         return Redirect::back();

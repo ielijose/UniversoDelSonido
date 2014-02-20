@@ -54,7 +54,11 @@
 
 	<!-- Tag Line ================================================== -->
 	<section id="tagLine" class="sixteen columns row">
+		@if(isset($msg))
+			<h1>{{ $msg }} </h1>
+		@else
 		<h1>Comercializamos los <span class="highlight">mejores</span> productos de <span class="highlight">iluminaci&oacute;n</span> y <span class="highlight">audio</span> profesional.</h1>
+		@endif
 	</section>
 
 	<div id="tagLineShadow" class="sixteen columns"></div>
