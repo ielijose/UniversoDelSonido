@@ -5738,7 +5738,7 @@ transition: all 0.2s ease-in-out;
 .comparison .onesixth:first-child{ width:200px;}
 
 .comparison .oneseventh{ position: relative; float: left; width: 124px; }
-.comparison .oneseventh:first-child{ position: relative; float: left; width:320px;}
+.comparison .oneseventh:first-child{ position: relative; float: left; width:210px;}
 
 
 .comparison .onesixth, .comparison .oneseventh, .comparison .onefifth, .comparison .onefourth, .comparison .onethird{ margin-right: 2px;}
@@ -6449,7 +6449,7 @@ html[xmlns] .slides {
 
 /* ****/
 .cart-change{
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   text-decoration: none !important;
 }

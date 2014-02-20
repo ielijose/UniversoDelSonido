@@ -27,7 +27,8 @@
 @if(count($cart) > 0)
 <section class="sixteen columns row-fourty left-twenty comparison">
 	<article class="oneseventh">
-		<ul class="features">
+    <header><h4>PRODUCTO</h4></header>
+		<ul class="features" style="margin-top:0px;">
 			<?php $i = -1; ?>
 			@foreach($cart as $item)
 			<?php $i++; $class= (($i%2)==0) ? "odd": "" ; ?>
@@ -53,22 +54,22 @@
 
 	<article class="onesixth">
 		<header><h4>PRECIO</h4></header>
-		<ul class="features">
+		<ul class="features" style="font-weight:bold; color:#F30; font-size:16px;">
 			<?php $i = -1; ?>
 			@foreach($cart as $item)
 			<?php $i++;  $class= (($i%2)==0) ? "odd": "" ; ?>
-			<li class="{{ $class }}">  {{ $item->price }}  </li>
+			<li class="{{ $class }}">Bs.  {{ $item->price }}  </li>
 			@endforeach
 		</ul>
 	</article>
 
 	<article class="onesixth">
 		<header class=""><h4>SUBTOTAL</h4></header>
-		<ul class="features">
+		<ul class="features" style="font-weight:bold; color:#C00; font-size:16px;">
 			<?php $i = -1; ?>
 			@foreach($cart as $item)
 			<?php $i++; $class= (($i%2)==0) ? "odd": "" ; ?>
-			<li class="{{ $class }}">  {{ $item->price*$item->qty }}  </li>
+			<li class="{{ $class }}">Bs.   {{ $item->price*$item->qty }}  </li>
 			@endforeach
 		</ul>
 	</article>
@@ -86,8 +87,8 @@
 		</ul>
 
 		<header class="highlighted"><h4>TOTAL</h4></header>
-		<ul class="features">
-			<li> {{ Cart::total() }} </li>
+		<ul class="features" style="font-weight:bold; color:#F00; font-size:18px;">
+			<li>Bs.  {{ Cart::total() }} </li>
 		</ul>
 	</article>
 </section>
@@ -106,7 +107,7 @@
    <!-- Columns - One half
    ================================================== -->
    
-   <section class=" contactForm">
+   <section class="contactForm" style="background-color:#f8f8f8; padding:10px;">
 
    	<div id="contact" class="quote">
 
@@ -128,8 +129,8 @@
 				{{ Form::label('direccion', 'Dirección de envio: ', array('class' => 'col-lg-2 control-label')) }}
 						
 				{{ Form::text('direccion', null, array('placeholder' =>'Ingresa tu dirección de envio.', 'required'=> 'required')) }}
-
-   				<input type="submit" class="submit button normal dark" id="submit" value="Procesar compra">
+				<p style="margin-top:-160px; margin-left:400px;">Ingresa tus datos para reportar la compra y recibir por correo los datos de </p>
+   				<input type="submit" class="submit button dark reverted" id="submit" value="Procesar compra" style="background-color:#f60; margin-top:0px; margin-right:30px;">
 
    			</fieldset>
 
