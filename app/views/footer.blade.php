@@ -16,7 +16,7 @@
 				<a href="index.html"><div class="footerLogo"></div></a>
 
 				 @if (Auth::user())
-					<a href="/panel/">Panel</a>
+                 <a href="/panel/"><div class="footerLogoActive"></div></a>
 				 @else
 					<form action="/login" method="post" class="nlform" >
 						<input class="nlfield" type="input"  name="username" id="user" placeholder="Usuario"  />

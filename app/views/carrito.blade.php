@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="headerContentContainer">
-		<div class="pageTitle">Mis Productos</div> 
+		<div class="pageTitle">Tu compra</div> 
 	</div>           
 </section>
 @stop

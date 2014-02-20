@@ -1381,6 +1381,15 @@ footer .footerLogo {
     margin-bottom: 10px;
 }
 
+footer .footerLogoActive {
+    position: relative;
+    width: 156px;
+    height: 133px;
+    background: url('../images/footerLogoActive.png') no-repeat left center;
+    left: 35px;
+    margin-bottom: 10px;
+}
+
 footer p{
  color: #d9d8d7;
   margin-bottom: 8px;
