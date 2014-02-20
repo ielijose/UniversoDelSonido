@@ -7,11 +7,11 @@ Route::get('/', function(){
     return View::make('index', array('productos' => $productos, 'categorias' => $categorias));
 });
 
-Route::get('/categoria/{id}', function($id)
+Route::get('/gama/{id}', function($id)
 {
 	$productos = Producto::where('categoria_id', '=', $id)->paginate(8);
     $categoria = Categoria::find($id);
-	return View::make('categoria', array('productos' => $productos, 'categoria' => $categoria ));	
+	return View::make('gama', array('productos' => $productos, 'categoria' => $categoria ));	
 });
 
 Route::get('/producto/{id}', function($id)
