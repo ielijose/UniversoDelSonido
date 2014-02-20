@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'contacto@joelblackberryzone.com.ve', 'name' => 'Contacto Blackberry Zone'),
+	'from' => array('address' => 'contacto@eluniversodelsonido.com', 'name' => 'El Universo del Sonido'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'puertolab@gmail.com',
+	'username' => 'mailserderservice@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'puertolab.com.ve',
+	'password' => 'mailserderservice2014',
 
 	/*
 	|--------------------------------------------------------------------------
