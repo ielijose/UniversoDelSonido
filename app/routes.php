@@ -114,7 +114,8 @@ Route::get('/factura', function()
 Route::get('/procesado', function()
 {
     $categorias = DB::table('categorias')->get();
-    return View::make('index', array('categorias' => $categorias, 'msg' => "Orden procesada, revise su email para completar el proceso."));
+    $productos = Producto::orderBy('id', 'DESC')->paginate(8);
+    return View::make('index', array('productos' => $productos, 'categorias' => $categorias, 'msg' => "Orden procesada, revise su email para completar el proceso."));
 });
 
 Route::get('/datos-enviados', function()
