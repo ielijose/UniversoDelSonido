@@ -6435,3 +6435,30 @@ html[xmlns] .slides {
 .date-comment{
   float: right;
 }
+
+
+
+/* ****/
+.cart-change{
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.cart-change.minus{
+  color: red;
+}
+.cart-change.plus{
+  color: green;
+}
+
+.cart-change:hover{
+  color:#fff;
+}
+
+span.cart-qty{
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1px 10px;
+}

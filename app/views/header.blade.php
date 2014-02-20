@@ -24,7 +24,11 @@
 				</li>
 
 				<li>
-					<a href="/contacto">CONT&Aacute;CTO<span>- estamos en cont&aacute;cto -</span></a></li>
+					<a href="/contacto">CONT&Aacute;CTO<span>- estamos en cont&aacute;cto -</span></a>
+				</li>
+				<li>
+					<a href="/carrito">CARRITO<span>- {{ Cart::total() }} Bs. -</span></a>
+				</li>
 			</ul>
 			<br style="clear: left" />
 		</div><!-- end ddsmoothmenu -->

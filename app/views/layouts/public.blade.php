@@ -82,12 +82,7 @@
     <script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="/assets/js/wiseguys.min.js"></script>
 
-
-
-	
-
 	@yield('js')
-
 
 </body>
 </html>
