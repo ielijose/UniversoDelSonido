@@ -26,9 +26,11 @@
 				<li>
 					<a href="/contacto">CONT&Aacute;CTO<span>- estamos en cont&aacute;cto -</span></a>
 				</li>
+				@if(Cart::total() > 0)
 				<li>
-					<a href="/carrito"  class="current">CARRITO<span>- {{ Cart::total() }} Bs. -</span></a>
+					<a href="/carrito"  class="current">TU COMPRA ES DE:<span>- {{ Cart::total() }} Bs. -</span></a>
 				</li>
+				@endif
 			</ul>
 			<br style="clear: left" />
 		</div><!-- end ddsmoothmenu -->
