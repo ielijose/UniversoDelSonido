@@ -27,7 +27,7 @@
 					<a href="/contacto">CONT&Aacute;CTO<span>- estamos en cont&aacute;cto -</span></a>
 				</li>
 				<li>
-					<a href="/carrito">CARRITO<span>- {{ Cart::total() }} Bs. -</span></a>
+					<a href="/carrito"  class="current">CARRITO<span>- {{ Cart::total() }} Bs. -</span></a>
 				</li>
 			</ul>
 			<br style="clear: left" />
