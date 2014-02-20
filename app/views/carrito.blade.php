@@ -129,6 +129,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
            
            <article class="oneseventh first">
           <header class="highlighted"><h4>PRODUCTO</h4></header>
@@ -257,6 +258,11 @@
 						
 				{{ Form::text('direccion', null, array('placeholder' =>'Ingresa tu dirección de envio.', 'required'=> 'required')) }}
 >>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
+=======
+				{{ Form::label('direccion', 'Dirección de envio: ', array('class' => 'col-lg-2 control-label')) }}
+						
+				{{ Form::text('direccion', null, array('placeholder' =>'Ingresa tu dirección de envio.', 'required'=> 'required')) }}
+>>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
 
    				<input type="submit" class="submit button normal dark" id="submit" value="Procesar compra">
 
@@ -266,6 +272,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    	</div>
 
@@ -284,12 +291,18 @@
    	</div>
 
 >>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
+=======
+
+   	</div>
+
+>>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
    </section>
 
 
 </section>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
 =======
@@ -304,6 +317,8 @@
 </section>
 
 
+>>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
+=======
 >>>>>>> 1bd72f4eca0d3ca7198ad84117ecd1a4c4772ad8
 @else
 	<section class="sixteen columns row-fourty left-twenty comparison">
