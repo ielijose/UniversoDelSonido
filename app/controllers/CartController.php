@@ -91,6 +91,11 @@ class CartController extends BaseController {
         return View::make('factura', array('factura' => $factura));
     }
 
+    public function get_factura_admin($slug){
+        $factura = Factura::where('slug', '=', $slug)->firstOrFail();
+        return View::make('factura-admin', array('factura' => $factura));
+    }
+
     public function post_pagar(){
         $inputs = Input::all();
 

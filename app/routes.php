@@ -134,6 +134,8 @@ Route::get('/datos-enviados', function()
 });
 
 Route::get('/factura/{slug}', ['uses' => 'CartController@get_factura'] );
+Route::get('/factura/a/{slug}', ['uses' => 'CartController@get_factura_admin'] );
+
 
 Route::post('/pagar', ['uses' => 'CartController@post_pagar'] );
 
