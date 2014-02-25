@@ -37,7 +37,7 @@
               <td valign="middle"><span class="muted">{{ $factura->direccion }}</span></td>
               <td><span class="muted">{{ $factura->total() }}</span></td>
               <td valign="middle">
-                <a href="/factura/{{ $factura->slug }}" class="btn btn-danger"><i class="icon-paste"></i> Ver</a>
+                <a href="/factura/a/{{ $factura->slug }}" target="_blank" class="btn btn-danger"><i class="icon-paste"></i> Ver</a>
               </td>
             </tr>
             @endforeach

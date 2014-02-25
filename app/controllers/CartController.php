@@ -80,8 +80,8 @@ class CartController extends BaseController {
 
         Mail::send('emails.factura', $data , function($m) use ($inputs)
         {
-            $m->from('ventas@eluniversodelsonido.com', 'ElUniversoDelSonido.com');
-            $m->to($inputs['correo'])->cc('ventas@eluniversodelsonido.com')->subject('Orden de compra.');
+            $m->from('ventas@eluniversodelsonido.com.ve', 'ElUniversoDelSonido.com');
+            $m->to($inputs['correo'])->cc('ventas@eluniversodelsonido.com.ve')->subject('Orden de compra.');
         });
         return Redirect::to('/procesado');
     } 
@@ -89,6 +89,11 @@ class CartController extends BaseController {
     public function get_factura($slug){
         $factura = Factura::where('slug', '=', $slug)->firstOrFail();
         return View::make('factura', array('factura' => $factura));
+    }
+
+    public function get_factura_admin($slug){
+        $factura = Factura::where('slug', '=', $slug)->firstOrFail();
+        return View::make('factura-admin', array('factura' => $factura));
     }
 
     public function post_pagar(){
@@ -117,8 +122,8 @@ class CartController extends BaseController {
 
         Mail::send('emails.pago', $data , function($m) use ($factura)
         {
-            $m->from('ventas@eluniversodelsonido.com', 'ElUniversoDelSonido.com');
-            $m->to($factura['correo'])->cc('ventas@eluniversodelsonido.com')->subject('Confirmación de Pago.');
+            $m->from('ventas@eluniversodelsonido.com.ve', 'ElUniversoDelSonido.com');
+            $m->to($factura['correo'])->cc('ventas@eluniversodelsonido.com.ve')->subject('Confirmación de Pago.');
         });
 
         return Redirect::back();

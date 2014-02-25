@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="headerContentContainer">
-		<div class="pageTitle">Tu compra</div> 
+		<div class="pageTitle">Datos de la compra</div> 
 	</div>           
 </section>
 @stop
@@ -89,7 +89,7 @@
 	<div class="sectionHeader row">
 
 		<div class="sectionHeadingWrap">
-			<span class="sectionHeading">Datos de Facturación</span>
+			<span class="sectionHeading">Datos del Cliente</span>
 		</div>
 
 	</div>
@@ -101,87 +101,46 @@
    <section class="contactForm" style="background-color:#f8f8f8; padding:10px;">
 
    	<div id="" class="quote">
-
-   		{{ Form::open(array('url' => '/pagar', 'method' => 'post', 'id' => 'pagar', 'enctype' => 'multipart/form-data')) }}
 			<!-- Start billing address -->
 			<div class="shipping-address bg5">
 				<!-- Start heading -->
 				<div class="row">
 					<div class="col-lg-12 bg2 heading pull-left">
-						<h4>Datos de facturación</h4>			
+						<h4>Datos del Cliente</h4>			
 					</div>		
 				</div>			
 				<!-- End heading -->
-
 				<div class="box">
-					@if($factura->pago)						
 						<ul class="listForm">
 							<li>	
-							{{ Form::label('recibo', 'Numero de recibo o transferencia: ') }}
-								{{ $factura->pago->recibo }}
+							{{ Form::label('recibo', 'Nombre: ') }}
+								{{ $factura->nombre }}
 							</li>
 							<li>
-							{{ Form::label('monto', 'Monto: ')}}
-								{{ $factura->pago->monto }}
+							{{ Form::label('monto', 'Teléfono: ')}}
+								{{ $factura->telefono }}
 								</li>
 							<li>
-							{{ Form::label('fecha', 'Fecha: ') }}
-								{{ $factura->pago->fecha }}
+							{{ Form::label('fecha', 'Correo: ') }}
+								{{ $factura->correo }}
 							</li>
 							<li>
-							{{ Form::label('adjunto', 'Adjunto: ') }}
-							<a href="/{{ $factura->pago->adjunto }}" target="_popup">ADJUNTO</a>	
+							{{ Form::label('adjunto', 'Dirección: ') }}
+								{{ $factura->direccion }}
 							</li>							
-						</ul>
-					@else
-						<div class="form-horizontal ">
-							<ul class="listForm">
-								{{ Form::label('recibo', 'Numero de recibo o transferencia: ', array('class' => 'col-lg-2 control-label')) }}
-								<li class="col-lg-8">
-									{{ Form::text('recibo', null, array('class' => 'form-block', 'placeholder' =>'Numero de recibo o transferencia', 'required' => "required")) }}
-									<div class="validation"></div>
-								</li>
-
-								{{ Form::label('monto', 'Monto: ', array('class' => 'col-lg-2 control-label')) }}
-								<li class="col-lg-8">
-									{{ Form::text('monto', null, array('class' => 'form-block', 'placeholder' =>'Monto.', 'required' => "required" )) }}
-									<div class="validation"></div>
-								</li>
-
-								{{ Form::label('fecha', 'Fecha: ', array('class' => 'col-lg-2 control-label')) }}
-								<li class="col-lg-8">
-									{{ Form::text('fecha', null, array('class' => 'form-block', 'placeholder' =>'dd/mm/aaaa', 'required' => "required" )) }}
-									<div class="validation"></div>
-								</li>
-
-
-								{{ Form::label('adjunto', 'Adjunto: ', array('class' => 'col-lg-2 control-label')) }}
-								<li class="col-lg-8">
-									<input name="adjunto" type="file" required="required" />
-
-									<div class="validation"></div>
-								</li>
-								
-							</ul>																
-						</div>	
-					@endif	
+						</ul>	
 				</div>
+
+				@if(!$factura->pago)
+				<!-- Start cart action -->
+				<div class="row">
+					<div class="col-lg-12 bg2 cart-action">
+						<h2 class="button dark reverted" style="background-color:#f60; margin-top:0px; margin-right:30px;"> Aun no pagada. </h2>
+					</div>		
+				</div>
+			@endif
 			</div>
 			<!-- End billing address -->
-			@if(!$factura->pago)
-			<!-- Start cart action -->
-			<div class="row">
-				<div class="col-lg-12 bg2 cart-action">
-					<input type="submit" class="submit button dark reverted" id="submit" value="Confirmar pago" style="background-color:#f60; margin-top:0px; margin-right:30px;">
-				</div>		
-			</div>
-			@endif
-
-			{{ Form::hidden('id', $factura->id )}}
-		{{ Form::close() }}	
-
-
-
    	</div>
 
    </section>
