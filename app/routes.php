@@ -60,7 +60,7 @@ Route::post('/comentar', function(){
 Route::post('/contactar', function(){   
     $inputs = Input::all();
     Mail::send('emails.contacto', $inputs, function($message){
-        $message->to('ielijose@gmail.com', 'Admin ElUniversoDelSonido!')->subject('Contacto desde ElUniversoDelSonido.com.ve!');
+        $message->to('ventas@eluniversodelsonido.com.ve', 'Admin ElUniversoDelSonido!')->subject('Contacto desde ElUniversoDelSonido.com.ve!');
     });
     return Redirect::to('/');      
 });
