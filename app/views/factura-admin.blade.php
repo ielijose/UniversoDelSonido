@@ -29,7 +29,8 @@
 
 <section class="sixteen columns row-fourty left-twenty comparison">
 	<article class="onefourth">
-		<ul class="features">
+    <header><h4>PRODUCTO</h4></header>
+		<ul class="features" style="margin-top:0PX;">
 			<?php $i = -1; ?>
 			@foreach($cart as $item)
 			<?php $i++; $class= (($i%2)==0) ? "odd": "" ; ?>
@@ -135,7 +136,7 @@
 				<!-- Start cart action -->
 				<div class="row">
 					<div class="col-lg-12 bg2 cart-action">
-						<h2 class="button dark reverted" style="background-color:#f60; margin-top:0px; margin-right:30px;"> Aun no pagada. </h2>
+						<h2 class="button dark reverted" style="background-color:#f60; margin-top:0px; margin-right:30px; padding:8px;"> Aun no pagada. </h2>
 					</div>		
 				</div>
 			@endif
