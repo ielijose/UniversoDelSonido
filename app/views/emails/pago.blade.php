@@ -5,8 +5,8 @@
 	<title>Factura</title>
 </head>
 <body style="font-family: sans-serif; background-color: #353637; margin: 0; color: #ecf0f1;"> 
-	<div style="width: 100%; background-color: #de2824; padding: 1em; text-align: center; border-bottom: 5px solid #c0392b;">
-		<img src="http://joelblackberryzone.com.ve/img/logo.png" alt="">
+	<div style="width: 100%; background-color: #f60; padding: 1em; text-align: center; border-bottom: 5px solid #c0392b;">
+		<img src="http://eluniversodelsonido.com.ve/admin/assets/img/logo.png" alt="">
 	</div>
 
 	<div style="padding: 0 1em;"> 
@@ -17,7 +17,7 @@
 		<p><strong>Recibo:</strong> {{ $pago['recibo'] }} </p>
 		<p><strong>Monto:</strong> {{ $pago['monto'] }} </p>
 		<p><strong>Fecha:</strong> {{ $pago['fecha'] }}</p>
-		<p><strong>Adjunto:</strong> <a href="http://joelblackberryzone.com.ve/{{ $pago['adjunto'] }}" style="font-size: 18px; background-color: #de2824; color: #ecf0f1; text-decoration: none; padding: .2em; border-bottom: 5px solid #c0392b; margin: 0 auto;">ENLACE</a> </p>
+		<p><strong>Adjunto:</strong> <a href="http://eluniversodelsonido.com.ve/{{ $pago['adjunto'] }}" style="font-size: 18px; background-color: #f60; color: #ecf0f1; text-decoration: none; padding: .2em; border-bottom: 5px solid #c0392b; margin: 0 auto;">ENLACE</a> </p>
 
 
 		<h1>Factura N# {{ $factura['id'] }} </h1>
@@ -55,7 +55,7 @@
 		<h4 align="right">Total: {{ $total }} Bs. </h4>
 	
 		<div align="center">
-			<a href="http://joelblackberryzone.com.ve/factura/{{ $factura['slug'] }}" style="font-size: 28px; background-color: #de2824; color: #ecf0f1; text-decoration: none; padding: .6em; border-bottom: 5px solid #c0392b; margin: 0 auto;"> Ver en linea </a>
+			<a href="http://eluniversodelsonido.com.ve/factura/{{ $factura['slug'] }}" style="font-size: 28px; background-color: #f60; color: #ecf0f1; text-decoration: none; padding: .6em; border-bottom: 5px solid #f50; margin: 0 auto;"> Ver en linea </a>
 		</div>
 	</div>
 	
