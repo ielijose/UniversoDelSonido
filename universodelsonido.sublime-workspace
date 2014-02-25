@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"autoload"
+			],
+			[
 				"ba",
 				"background-color"
 			],
@@ -308,10 +312,6 @@
 				"classified"
 			],
 			[
-				"a",
-				"array"
-			],
-			[
 				"desc",
 				"descplain"
 			],
@@ -519,134 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/wamp/www/ilusion/theme20.com/index.html",
-			"settings":
-			{
-				"buffer_size": 10540,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/views/home.blade.php",
-			"settings":
-			{
-				"buffer_size": 10687,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/views/footer.blade.php",
-			"settings":
-			{
-				"buffer_size": 2533,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/views/header.blade.php",
-			"settings":
-			{
-				"buffer_size": 13913,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/composer.json",
-			"settings":
-			{
-				"buffer_size": 734,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/app/config/app.php",
-			"settings":
-			{
-				"buffer_size": 6971,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/app/config/database.php",
-			"settings":
-			{
-				"buffer_size": 3322,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/app/database/seeds/DatabaseSeeder.php",
-			"settings":
-			{
-				"buffer_size": 306,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/app/database/seeds/ExampleSettingsSeeder.php",
-			"settings":
-			{
-				"buffer_size": 551,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/app/database/seeds/UserTable.php",
-			"settings":
-			{
-				"buffer_size": 886,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/config/setup.php",
-			"settings":
-			{
-				"buffer_size": 271,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/dashboard.blade.php",
-			"settings":
-			{
-				"buffer_size": 169,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/posts/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 1782,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/views/slider.blade.php",
-			"settings":
-			{
-				"buffer_size": 8393,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/routes.php",
-			"settings":
-			{
-				"buffer_size": 1130,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/ilusion/app/views/layouts/public.blade.php",
-			"settings":
-			{
-				"buffer_size": 97,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
@@ -768,10 +640,34 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/bin/apache/Apache2.4.4/conf/extra/httpd-vhosts.conf",
+		"/C/node/nw/lamp/index.html",
+		"/C/node/nw/lamp/accessdb.js",
+		"/C/wamp/www/lamp/index.php",
+		"/C/wamp/www/LampFitness/composer.json",
+		"/C/wamp/www/LampFitness/index.php",
+		"/C/wamp/www/ilusion/app/routes.php",
+		"/C/wamp/www/ilusion/theme20.com/index.html",
+		"/C/wamp/www/ilusion/app/views/home.blade.php",
+		"/C/wamp/www/ilusion/app/views/footer.blade.php",
+		"/C/wamp/www/ilusion/app/views/header.blade.php",
+		"/C/wamp/www/laravel/composer.json",
+		"/C/wamp/www/laravel/app/config/app.php",
+		"/C/wamp/www/laravel/app/config/database.php",
+		"/C/wamp/www/laravel/app/database/seeds/DatabaseSeeder.php",
+		"/C/wamp/www/laravel/app/database/seeds/ExampleSettingsSeeder.php",
+		"/C/wamp/www/laravel/app/database/seeds/UserTable.php",
+		"/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/config/setup.php",
+		"/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/dashboard.blade.php",
+		"/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/posts/index.blade.php",
+		"/C/wamp/www/ilusion/app/views/slider.blade.php",
+		"/C/wamp/www/ilusion/app/views/layouts/public.blade.php",
+		"/C/wamp/www/ielijose.com/bootstrap/paths.php",
+		"/C/wamp/www/UniversoDelSonido/bootstrap/autoload.php",
+		"/C/wamp/www/ielijose.com/public/index.php",
 		"/C/wamp/www/ilusion/app/config/app.php",
 		"/C/wamp/www/ilusion/theme20.com/demo/remix/index.html",
 		"/C/Windows/System32/drivers/etc/hosts",
-		"/C/wamp/bin/apache/Apache2.4.4/conf/extra/httpd-vhosts.conf",
 		"/C/wamp/www/ilusion/tema/index.php",
 		"/C/wamp/www/ilusion/wp-config.php",
 		"/C/wamp/www/ilusion/tema/css/reset.css",
@@ -871,31 +767,7 @@
 		"/C/_.new/hosts",
 		"/C/wamp/www/blackberryzone/composer.json",
 		"/C/wamp/www/universodelsonido/composer.json",
-		"/C/wamp/www/ielijose.com/composer.lock",
-		"/C/wamp/www/ielijose.com/composer.json",
-		"/C/wamp/www/ielijose.com/app/Content/DatabaseContentRepository.php",
-		"/C/wamp/www/ielijose.com/update.sh",
-		"/C/wamp/www/universodelsonido/app/config/mail.php",
-		"/C/wamp/www/blackberryzone/app/config/auth.php",
-		"/C/wamp/www/blackberryzone/app/config/database.php",
-		"/C/wamp/www/universodelsonido/app/config/database.php",
-		"/C/wamp/www/blackberryzone/app/config/mail.php",
-		"/C/wamp/www/blackberryzone/app/config/queue.php",
-		"/C/wamp/www/blackberryzone/app/config/remote.php",
-		"/C/wamp/www/blackberryzone/app/config/session.php",
-		"/C/wamp/www/blackberryzone/app/config/view.php",
-		"/C/wamp/www/blackberryzone/app/config/workbench.php",
-		"/C/wamp/www/blackberryzone/app/config/compile.php",
-		"/C/wamp/www/blackberryzone/app/config/cache.php",
-		"/C/wamp/www/universodelsonido/app/config/auth.php",
-		"/C/wamp/www/blackberryzone/app/config/app.php",
-		"/C/wamp/www/universodelsonido/app/views/hello.php",
-		"/C/wamp/www/a2.php",
-		"/C/wamp/www/universodelsonido/app/controllers/FacturaController.php",
-		"/C/wamp/www/universodelsonido/app/views/categoria.blade.php",
-		"/C/wamp/www/universodelsonido/public/css/style.css",
-		"/C/wamp/www/universodelsonido/.gitignore",
-		"/C/Users/Eli José Carrasquero/Desktop/hosts"
+		"/C/wamp/www/ielijose.com/composer.lock"
 	],
 	"find":
 	{
@@ -1148,490 +1020,8 @@
 	"groups":
 	[
 		{
-			"selected": 12,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/wamp/www/ilusion/theme20.com/index.html",
-					"settings":
-					{
-						"buffer_size": 10540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10501,
-								10501
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3808.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/wamp/www/ilusion/app/views/home.blade.php",
-					"settings":
-					{
-						"buffer_size": 10687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1155,
-								1155
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/wamp/www/ilusion/app/views/footer.blade.php",
-					"settings":
-					{
-						"buffer_size": 2533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								916,
-								916
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/wamp/www/ilusion/app/views/header.blade.php",
-					"settings":
-					{
-						"buffer_size": 13913,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								777,
-								777
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/wamp/www/laravel/composer.json",
-					"settings":
-					{
-						"buffer_size": 734,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								211,
-								211
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/wamp/www/laravel/app/config/app.php",
-					"settings":
-					{
-						"buffer_size": 6971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3918,
-								3918
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1495.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/wamp/www/laravel/app/config/database.php",
-					"settings":
-					{
-						"buffer_size": 3322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1769,
-								1769
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/wamp/www/laravel/app/database/seeds/DatabaseSeeder.php",
-					"settings":
-					{
-						"buffer_size": 306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6,
-								6
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/wamp/www/laravel/app/database/seeds/ExampleSettingsSeeder.php",
-					"settings":
-					{
-						"buffer_size": 551,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/wamp/www/laravel/app/database/seeds/UserTable.php",
-					"settings":
-					{
-						"buffer_size": 886,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/config/setup.php",
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								256,
-								264
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/dashboard.blade.php",
-					"settings":
-					{
-						"buffer_size": 169,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								162,
-								162
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/C/wamp/www/laravel/vendor/davzie/laravel-bootstrap/src/views/posts/index.blade.php",
-					"settings":
-					{
-						"buffer_size": 1782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								85
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/C/wamp/www/ilusion/app/views/slider.blade.php",
-					"settings":
-					{
-						"buffer_size": 8393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8393,
-								8393
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 43.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/C/wamp/www/ilusion/app/routes.php",
-					"settings":
-					{
-						"buffer_size": 1130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/C/wamp/www/ilusion/app/views/layouts/public.blade.php",
-					"settings":
-					{
-						"buffer_size": 97,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								48,
-								22
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

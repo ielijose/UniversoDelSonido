@@ -32,6 +32,15 @@ Route::get('/carrito', function()
     return View::make('carrito', array('cart' => $cart )); 
 });
 
+Route::get('/nosotros', function()
+{
+    return View::make('nosotros'); 
+});
+Route::get('/contacto', function()
+{
+    return View::make('contacto'); 
+});
+
 Route::post('/total', function()
 {
     echo Cart::total();
@@ -51,7 +60,7 @@ Route::post('/comentar', function(){
 Route::post('/contactar', function(){   
     $inputs = Input::all();
     Mail::send('emails.contacto', $inputs, function($message){
-        $message->to('joeloquendo@joelblackberryzone.com.ve', 'Admin JoelBlackberryZone!')->subject('Contacto desde JoelBlackberryZone.com.ve!');
+        $message->to('ielijose@gmail.com', 'Admin ElUniversoDelSonido!')->subject('Contacto desde ElUniversoDelSonido.com.ve!');
     });
     return Redirect::to('/');      
 });
