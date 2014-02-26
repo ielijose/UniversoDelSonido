@@ -32,7 +32,7 @@ class AdminController extends BaseController {
 
         }
 
-        return Redirect::to('/panel/categorias');
+        return Redirect::to('/panel/gamas');
     }
     
     public function dashboard()

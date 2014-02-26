@@ -13,7 +13,7 @@
 		<div class="footerTopWrapper">
 
 			<div class="onefourth logoFooter">
-				<a href="index.html"><div class="footerLogo"></div></a>
+				<a href="#"><div class="footerLogo"></div></a>
 
 				 @if (Auth::user())
                  <a href="/panel/"><div class="footerLogoActive"></div></a>
@@ -76,10 +76,10 @@
 
 
 		<ul class="footerMenu">
-			<li><a href="index.html">INICIO</a></li>
-			<li><a href="nosotros.html">NOSOTROS</a></li>
+			<li><a href="/">INICIO</a></li>
+			<li><a href="/nosotros/">NOSOTROS</a></li>
 			<li><a href="#">PRODUCTOS</a></li>
-			<li><a href="contacto.html">CONT&Aacute;CTO</a></li>
+			<li><a href="/contacto">CONT&Aacute;CTO</a></li>
 		</ul>
 
 		<span class="copyright">Derechos reservados &copy; El Universo del Sonido {{ date('Y') }}</span>

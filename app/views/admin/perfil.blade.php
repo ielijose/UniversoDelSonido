@@ -78,7 +78,6 @@
 		$("#change-password").on("submit", function(event){
 			//event.preventDefault();
 			var p1 = $("#pass1").val(), p2 = $("#pass2").val();
-			debugger;
 			if( (p1 == p2) && (p1.length > 0 && p2.length > 0) ){
 				$("label.error").text("");
 				return true;
