@@ -1986,7 +1986,10 @@ background: url('../images/tiles/footerMenuSeparator.gif') no-repeat  0px 5px;
 
 
     header .logo {
-        margin-left: 10px;
+        margin-left: -20px;
+        width: 230px;
+        background-size:80px 60px;
+
     }
   
     .container header.sixteen.columns{
@@ -2012,7 +2015,7 @@ background: url('../images/tiles/footerMenuSeparator.gif') no-repeat  0px 5px;
 
     nav form {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-top: 35px;
     }
 
