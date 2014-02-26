@@ -27,7 +27,7 @@
 			<div class="img_wrapper"> <img src="{{ $producto->imagen['imagen'] }}" /> </div>
 			<div class="titles">
 				<h2>{{ $producto->nombre }}</h2>
-				<p><em>Bs. {{ $producto->precio }}</em></p>
+				<p style="color:#F00;"><em>Bs. {{ $producto->precio }}</em></p>
 			</div>
 		</div>
 		<div class="meta actions">

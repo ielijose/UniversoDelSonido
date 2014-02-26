@@ -25,19 +25,6 @@
 							</div>
 						</div>	
 					</div>
-					<div class="col-md-6">
-						<h4>Detalles</h4>
-						<div class="row form-row">
-							<div class="col-md-12">
-								<input name="detalles" class="form-control span12 tagsinput" id="source-tags" type="text" value="{{ $producto->stringdetalles }}" />
-								<div class="row small-text">
-									<p class="col-md-12">
-										Ingresa los detalles del producto, separa con la tecla [ENTER]
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
