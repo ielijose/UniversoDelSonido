@@ -104,6 +104,10 @@
 			<ul>	
 				<li class=""> <a href="/panel/gamas"> <i class="icon-custom-form" style="color:#FFF;"></i> <span class="title">Gamas</span></a> </li>      
 				<li class=""> <a href="/panel/facturas"> <i class="icon-custom-extra" style="color:#FFF;"></i>  <span class="title">Facturas</span></a></li>      
+				<li class=""> <a href="/panel/perfil"> <i class="icon-custom-settings" style="color:#FFF;"></i>  <span class="title">Mi Cuenta</span></a></li>      
+
+
+
 			</ul>
 			<!-- END SIDEBAR MENU --> 
 		</div>

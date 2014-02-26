@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
 <div class="page-title">	
-	<h3>Joel Blackberry Zone </h3>		
+	<h3>El Universo del Sonido</h3>		
 </div>
 <div id="container">
 	<div class="row spacing-bottom 2col">	

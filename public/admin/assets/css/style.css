@@ -133,7 +133,7 @@ Page sidebar
 
 .page-sidebar.mini > ul > li >a:hover, 
 .page-sidebar.mini > ul > li:hover >a {  
-  background: #0b9c8f;
+  background: #f90;
 }
 .page-sidebar.mini  > ul > li > ul.sub-menu{
 	position:absolute;
@@ -4138,7 +4138,6 @@ background-position: -95px -40px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
     background-color: #F30;
-    *background-color: #0b9c8f;
 }
 .btn-success{
 	color: #fff;
@@ -4242,7 +4241,7 @@ background-position: -95px -40px;
     background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-    background-color: #0b9c8f;
+    background-color: #f90;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
     background-color: #fbc01e;

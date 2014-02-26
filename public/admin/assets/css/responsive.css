@@ -216,7 +216,7 @@ and (min-width : 1824px) {
 	}	
 	.page-sidebar > ul > li >a:hover, 
 	.page-sidebar > ul > li:hover >a {  
-		background: #0b9c8f;
+		background: #f30;
 	}
 	.page-sidebar > ul > li.open > a, .page-sidebar > ul > li > a:hover, .page-sidebar > ul > li:hover > a{
 		padding: 13px;
